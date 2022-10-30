@@ -6,7 +6,7 @@ locals {
   own_tags = {
     Name      = "${var.resource_prefix}-airflow-${var.resource_suffix}"
     CreatedBy = "Terraform"
-    Module    = "terraform-aws-ecs-airflow"
+    Module    = "tf-aws-ecs-airflow"
   }
   common_tags = merge(local.own_tags, var.extra_tags)
 
